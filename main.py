@@ -6,7 +6,7 @@ from collections import defaultdict, deque
 import spacy
 
 # Replace 'YOUR_BOT_TOKEN' with your actual bot token
-bot_token = '7426761999:AAEED3SDrwC8pGh-x6wVbjLmgqsocMGfilU'
+bot_token = 'YOUR_BOT_TOKEN'
 bot = telebot.TeleBot(bot_token)
 
 # Load spaCy model
@@ -105,7 +105,7 @@ def periodic_message():
         time.sleep(1)  # Wait 10 minutes
         # Choose a random chat and send a message if it has enough data
         if smert_butt.memory:
-            chat_id = -1002108265780  # Replace with your actual chat ID or make it dynamic
+            chat_id = "Chat_ID"  # Replace with your actual chat ID or make it dynamic
             if random.random() < 0.5:  # 50% chance to use a more useful response
                 response = smert_butt.build_useful_response()
             else:
